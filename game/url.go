@@ -6,15 +6,15 @@ import (
 	"net/http"
 	"time"
 
+	"githab.com/ServerUtility/code"
+	"githab.com/ServerUtility/foundation"
+	"githab.com/ServerUtility/game"
+	"githab.com/ServerUtility/httprouter"
+	"githab.com/ServerUtility/messagehandle"
+	"githab.com/ServerUtility/myhttp"
+	"githab.com/ServerUtility/socket"
+	"githab.com/Webserver/game/protocol"
 	"github.com/gorilla/websocket"
-	"gitlab.com/ServerUtility/code"
-	"gitlab.com/ServerUtility/foundation"
-	"gitlab.com/ServerUtility/game"
-	"gitlab.com/ServerUtility/httprouter"
-	"gitlab.com/ServerUtility/messagehandle"
-	"gitlab.com/ServerUtility/myhttp"
-	"gitlab.com/ServerUtility/socket"
-	"gitlab.com/Webserver/game/protocol"
 )
 
 func (g *Game) createNewSocket(w http.ResponseWriter, r *http.Request) {

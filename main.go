@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gitlab.com/Webserver/game"
+	"githab.com/Webserver/game"
 )
 
 func main() {

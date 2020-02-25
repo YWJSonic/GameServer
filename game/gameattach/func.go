@@ -1,6 +1,6 @@
 package gameattach
 
-import "gitlab.com/ServerUtility/attach"
+import "githab.com/ServerUtility/attach"
 
 // NewAttach ...
 func NewAttach(userID int64) attach.IAttach {

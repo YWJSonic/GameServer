@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	"gitlab.com/ServerUtility/cacheinfo"
-	"gitlab.com/ServerUtility/code"
-	"gitlab.com/ServerUtility/messagehandle"
-	"gitlab.com/ServerUtility/redigo/redis"
+	"githab.com/ServerUtility/cacheinfo"
+	"githab.com/ServerUtility/code"
+	"githab.com/ServerUtility/messagehandle"
+	"githab.com/ServerUtility/redigo/redis"
 )
 
 // Setting ...

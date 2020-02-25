@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"errors"
 
-	"gitlab.com/ServerUtility/foundation"
-	"gitlab.com/ServerUtility/foundation/fileload"
-	"gitlab.com/ServerUtility/restfult"
-	"gitlab.com/ServerUtility/socket"
-	"gitlab.com/Webserver/game/gamerule"
-	"gitlab.com/baseserver/server"
+	"githab.com/ServerUtility/foundation"
+	"githab.com/ServerUtility/foundation/fileload"
+	"githab.com/ServerUtility/restfult"
+	"githab.com/ServerUtility/socket"
+	"githab.com/Webserver/game/gamerule"
+	"githab.com/baseserver/server"
 )
 
 // NewGameServer ...

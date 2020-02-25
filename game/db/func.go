@@ -3,10 +3,10 @@ package db
 import (
 	"database/sql"
 
-	"gitlab.com/ServerUtility/code"
-	"gitlab.com/ServerUtility/dbservice"
-	"gitlab.com/ServerUtility/foundation"
-	"gitlab.com/ServerUtility/messagehandle"
+	"githab.com/ServerUtility/code"
+	"githab.com/ServerUtility/dbservice"
+	"githab.com/ServerUtility/foundation"
+	"githab.com/ServerUtility/messagehandle"
 )
 
 // GetSetting get db setting

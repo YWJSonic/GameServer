@@ -1,14 +1,14 @@
 package game
 
 import (
-	"gitlab.com/ServerUtility/game"
-	"gitlab.com/ServerUtility/playerinfo"
-	"gitlab.com/ServerUtility/restfult"
-	"gitlab.com/ServerUtility/socket"
-	"gitlab.com/ServerUtility/user"
-	"gitlab.com/Webserver/game/cache"
-	"gitlab.com/Webserver/game/gameattach"
-	"gitlab.com/baseserver/server"
+	"githab.com/ServerUtility/game"
+	"githab.com/ServerUtility/playerinfo"
+	"githab.com/ServerUtility/restfult"
+	"githab.com/ServerUtility/socket"
+	"githab.com/ServerUtility/user"
+	"githab.com/Webserver/game/cache"
+	"githab.com/Webserver/game/gameattach"
+	"githab.com/baseserver/server"
 )
 
 // Game ...

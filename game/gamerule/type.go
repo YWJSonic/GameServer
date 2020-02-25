@@ -1,8 +1,8 @@
 package gamerule
 
 import (
-	"gitlab.com/ServerUtility/attach"
-	"gitlab.com/ServerUtility/game"
+	"githab.com/ServerUtility/attach"
+	"githab.com/ServerUtility/game"
 )
 
 // JackPartBonusx2Index ...
