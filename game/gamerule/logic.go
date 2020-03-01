@@ -3,8 +3,8 @@ package gamerule
 import (
 	"fmt"
 
-	"githab.com/ServerUtility/foundation"
-	"githab.com/ServerUtility/gameplate"
+	"github.com/YWJSonic/ServerUtility/foundation"
+	"github.com/YWJSonic/ServerUtility/gameplate"
 )
 
 type result struct {

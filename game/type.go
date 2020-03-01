@@ -1,21 +1,22 @@
 package game
 
 import (
-	"githab.com/ServerUtility/game"
-	"githab.com/ServerUtility/playerinfo"
-	"githab.com/ServerUtility/restfult"
-	"githab.com/ServerUtility/socket"
-	"githab.com/ServerUtility/user"
-	"githab.com/Webserver/game/cache"
-	"githab.com/Webserver/game/gameattach"
-	"githab.com/baseserver/server"
+	"github.com/YWJSonic/GameServer/game/cache"
+	"github.com/YWJSonic/GameServer/game/gameattach"
+
+	"github.com/YWJSonic/BaseServer/server"
+	"github.com/YWJSonic/ServerUtility/igame"
+	"github.com/YWJSonic/ServerUtility/playerinfo"
+	"github.com/YWJSonic/ServerUtility/restfult"
+	"github.com/YWJSonic/ServerUtility/socket"
+	"github.com/YWJSonic/ServerUtility/user"
 )
 
 // Game ...
 type Game struct {
 	Server    *server.Service
 	Cache     *cache.GameCache
-	IGameRule game.IGameRule
+	IGameRule igame.IGameRule
 	// ProtocolMap map[string]func(r *http.Request) protocol.IProtocol
 }
 

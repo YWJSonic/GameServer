@@ -1,8 +1,6 @@
 package main
 
-import (
-	"githab.com/Webserver/game"
-)
+import "github.com/YWJSonic/GameServer/game"
 
 func main() {
 	game.NewGameServer()

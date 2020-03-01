@@ -1,8 +1,8 @@
 package gamerule
 
 import (
-	"githab.com/ServerUtility/attach"
-	"githab.com/ServerUtility/game"
+	"github.com/YWJSonic/ServerUtility/attach"
+	"github.com/YWJSonic/ServerUtility/igame"
 )
 
 // JackPartBonusx2Index ...
@@ -112,7 +112,7 @@ func (r *Rule) Wild4() int {
 // }
 
 // GameRequest ...
-func (r *Rule) GameRequest(config *game.RuleRequest) *game.RuleRespond {
+func (r *Rule) GameRequest(config *igame.RuleRequest) *igame.RuleRespond {
 	betMoney := r.GetBetMoney(config.BetIndex)
 	jackPart := r.getJPFromAttach(config.Attach)
 	result := make(map[string]interface{})
@@ -133,7 +133,7 @@ func (r *Rule) GameRequest(config *game.RuleRequest) *game.RuleRespond {
 	result["totalwinscore"] = totalWin
 	r.setJPFromAttach(betMoney, config.Attach, &jackPart)
 
-	return &game.RuleRespond{
+	return &igame.RuleRespond{
 		Attach:        config.Attach,
 		BetMoney:      betMoney,
 		Totalwinscore: totalWin,

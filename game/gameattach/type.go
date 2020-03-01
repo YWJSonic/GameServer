@@ -1,6 +1,6 @@
 package gameattach
 
-import "githab.com/ServerUtility/attach"
+import "github.com/YWJSonic/ServerUtility/attach"
 
 // UserAttach ...
 type UserAttach struct {

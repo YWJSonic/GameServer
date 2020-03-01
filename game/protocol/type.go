@@ -3,8 +3,8 @@ package protocol
 import (
 	"net/http"
 
-	"githab.com/ServerUtility/foundation"
-	"githab.com/ServerUtility/myhttp"
+	"github.com/YWJSonic/ServerUtility/foundation"
+	"github.com/YWJSonic/ServerUtility/myhttp"
 )
 
 // // NewProtocolMap ...

@@ -3,10 +3,10 @@ package db
 import (
 	"database/sql"
 
-	"githab.com/ServerUtility/code"
-	"githab.com/ServerUtility/dbservice"
-	"githab.com/ServerUtility/foundation"
-	"githab.com/ServerUtility/messagehandle"
+	"github.com/YWJSonic/ServerUtility/code"
+	"github.com/YWJSonic/ServerUtility/dbservice"
+	"github.com/YWJSonic/ServerUtility/foundation"
+	"github.com/YWJSonic/ServerUtility/messagehandle"
 )
 
 // GetSetting get db setting

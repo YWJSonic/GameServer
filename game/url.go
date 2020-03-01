@@ -1,22 +1,5 @@
 package game
 
-import (
-	"fmt"
-	"log"
-	"net/http"
-	"time"
-
-	"githab.com/ServerUtility/code"
-	"githab.com/ServerUtility/foundation"
-	"githab.com/ServerUtility/game"
-	"githab.com/ServerUtility/httprouter"
-	"githab.com/ServerUtility/messagehandle"
-	"githab.com/ServerUtility/myhttp"
-	"githab.com/ServerUtility/socket"
-	"githab.com/Webserver/game/protocol"
-	"github.com/gorilla/websocket"
-)
-
 func (g *Game) createNewSocket(w http.ResponseWriter, r *http.Request) {
 	token := r.Header.Get("token")
 	if !g.CheckToken(token) {
@@ -132,7 +115,7 @@ func (g *Game) gameresult(w http.ResponseWriter, r *http.Request, ps httprouter.
 	player.LoadData()
 
 	// get game result
-	RuleRequest := &game.RuleRequest{
+	RuleRequest := &igame.RuleRequest{
 		BetIndex: proto.BetIndex,
 		Attach:   player.IAttach,
 	}
