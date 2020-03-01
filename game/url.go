@@ -1,5 +1,22 @@
 package game
 
+import (
+	"fmt"
+	"log"
+	"net/http"
+	"time"
+
+	"github.com/YWJSonic/GameServer/game/protocol"
+	"github.com/YWJSonic/ServerUtility/code"
+	"github.com/YWJSonic/ServerUtility/foundation"
+	"github.com/YWJSonic/ServerUtility/httprouter"
+	"github.com/YWJSonic/ServerUtility/igame"
+	"github.com/YWJSonic/ServerUtility/messagehandle"
+	"github.com/YWJSonic/ServerUtility/myhttp"
+	"github.com/YWJSonic/ServerUtility/socket"
+	"github.com/gorilla/websocket"
+)
+
 func (g *Game) createNewSocket(w http.ResponseWriter, r *http.Request) {
 	token := r.Header.Get("token")
 	if !g.CheckToken(token) {
@@ -18,7 +35,10 @@ func (g *Game) createNewSocket(w http.ResponseWriter, r *http.Request) {
 		log.Println("upgrade:", err)
 		return
 	}
-	g.Server.Socket.AddNewConn("f", c, g.SocketMessageHandle)
+	g.Server.Socket.AddNewConn("f", c, func(msg socket.Message) error {
+		fmt.Println("#-- socket --#", msg)
+		return nil
+	})
 	// g.Server.Socket.AddNewConn(user.GetGameInfo().GameAccount, c, g.SocketMessageHandle)
 
 	time.Sleep(time.Second * 3)
